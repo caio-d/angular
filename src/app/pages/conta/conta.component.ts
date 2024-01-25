@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ContaModel } from 'src/app/models/conta.model';
-import { ApiService } from 'src/app/api.service';
 
 @Component({
   selector: 'app-conta',
@@ -10,11 +9,7 @@ import { ApiService } from 'src/app/api.service';
 export class ContaComponent implements OnInit {
   @Input() arrayContas: ContaModel[] = [];
 
-  constructor(private apiService: ApiService) {}
+  constructor() {}
 
-  ngOnInit(): void {
-    this.apiService.getConta().subscribe((contas) => {
-      this.arrayContas = contas;
-    });
-  }
+  ngOnInit(): void {}
 }
