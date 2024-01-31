@@ -1,14 +1,23 @@
-<mat-toolbar color="primary">
-  <mat-toolbar-row>
-    <button mat-icon-button type="button">
-      <mat-icon>menu</mat-icon>
-    </button>
-  </mat-toolbar-row>
-</mat-toolbar>
-<mat-sidenav-container class="sidenav-container" autosize>
-  <mat-nav-list class="sidenav" mode="side" opened>
-    <a mat-list-item routerLink=""> whaat? </a>
-  </mat-nav-list>
-</mat-sidenav-container>
-
-<app-carteira></app-carteira>
+<div class="container">
+  <div>
+    <header class="header">
+      <mat-toolbar color="primary">
+        <mat-toolbar-row>
+          <button mat-icon-button type="button">
+            <mat-icon>menu</mat-icon>
+          </button>
+        </mat-toolbar-row>
+      </mat-toolbar>
+    </header>
+  </div>
+  <div class="divSidenav">
+    <mat-sidenav-container class="sidenav">
+      <mat-nav-list class="list" mode="side" opened>
+        <a mat-list-item routerLink=""> whaat? </a>
+      </mat-nav-list>
+    </mat-sidenav-container>
+  </div>
+  <div class="divCarteira">
+    <app-carteira></app-carteira>
+  </div>
+</div>
