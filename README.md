@@ -2,7 +2,11 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.6.
 
+#
+
 Primeiro projetinho angular, pegando as noções gerais por trás do desenvolvimento front-end, estou gostando muito de angular 
+
+#
 
 ## Development server
 
