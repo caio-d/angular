@@ -14,12 +14,4 @@ export class CarteiraService {
   getCarteira(): Observable<CarteiraModel[]> {
     return this.http.get<CarteiraModel[]>(`${this.apiUrl}/carteira`);
   }
-
-  putCarteira(contaUpdate: CarteiraModel): Observable<CarteiraModel> {
-    const id = contaUpdate.id;
-    return this.http.put<CarteiraModel>(
-      `${this.apiUrl}/conta/${id}`,
-      contaUpdate
-    );
-  }
 }

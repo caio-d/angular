@@ -11,6 +11,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { NgIf } from '@angular/common';
 import { AppComponent } from './app.component';
 import { CarteiraComponent } from './components/carteira/carteira.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [AppComponent, CarteiraComponent],
@@ -25,6 +26,7 @@ import { CarteiraComponent } from './components/carteira/carteira.component';
     MatIconModule,
     MatButtonModule,
     NgIf,
+    MatCardModule,
   ],
   providers: [],
   bootstrap: [AppComponent],
