@@ -12,9 +12,18 @@ import { NgIf } from '@angular/common';
 import { AppComponent } from './app.component';
 import { CarteiraComponent } from './components/carteira/carteira.component';
 import { MatCardModule } from '@angular/material/card';
+import { CarteiraPageComponent } from './pages/carteira-page/carteira-page.component';
+import { SidebarComponent } from './components/sidebar/sidebar.component';
+import { HeaderComponent } from './components/header/header.component';
 
 @NgModule({
-  declarations: [AppComponent, CarteiraComponent],
+  declarations: [
+    AppComponent,
+    CarteiraComponent,
+    CarteiraPageComponent,
+    SidebarComponent,
+    HeaderComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -31,6 +40,4 @@ import { MatCardModule } from '@angular/material/card';
   providers: [],
   bootstrap: [AppComponent],
 })
-export class AppModule {
-  showFiller = false;
-}
+export class AppModule {}
