@@ -1,7 +1,14 @@
 <div class="carteiras" *ngFor="let carteira of carteiras">
   <div>
     <mat-card class="mat-card" routerLink="carteira">
-      <img src="assets/icons/carteira-icon.svg" />
+      <mat-card-header class="mat-header">
+        <img src="assets/icons/carteira-icon.svg" />
+      </mat-card-header>
+      <mat-card-content class="mat-content">
+        <h1 class="nome">{{ carteira.nome }}</h1>
+        <p class="saldo">{{ carteira.saldo }}</p>
+        <p class="divida">{{ carteira.divida }}</p>
+      </mat-card-content>
     </mat-card>
   </div>
 </div>
